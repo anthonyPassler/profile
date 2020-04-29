@@ -15,9 +15,17 @@ h1, h2 {
   color: #204051;
   margin: 5px;
 }
+@keyframes jump {
+  from {color: #43d8c9;}
+  to {color: #204051;}
+}
 h1 {
   font-size: 25px;
   font-weight: 400;
+  animation-name: jump;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 h2 {
   font-size: 18px;
@@ -78,6 +86,7 @@ ul li {
 .social-icons:hover {
   color: #3b6978;
 }
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
